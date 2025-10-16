@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Ti, Mi Amor ❤️</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="floating-hearts"></div>
+    
+    <!-- Pantalla de bienvenida -->
+    <div id="welcome-screen" class="screen active">
+        <div class="welcome-content">
+            <h1 class="title-animation">Para Ti, Mi Amor</h1>
+            <div class="heart-pulse">💖</div>
+            <p class="subtitle">Una carta especial para la persona más importante de mi vida</p>
+            <button id="start-btn" class="romantic-btn">Abrir Carta</button>
+        </div>
+    </div>
+
+    <!-- Juego de corazones -->
+    <div id="heart-game" class="screen">
+        <div class="game-content">
+            <h2>Atrapa todos los corazones para continuar</h2>
+            <div class="score">Corazones: <span id="score">0</span>/10</div>
+            <div id="game-area">
+                <div id="catcher"></div>
+            </div>
+            <p class="game-instruction">Mueve el mouse para atrapar los corazones</p>
+        </div>
+    </div>
+
+    <!-- Carta principal -->
+    <div id="letter-screen" class="screen">
+        <div class="letter-container">
+            <div class="letter-header">
+                <h2>Mi Carta Para Ti</h2>
+                <div class="date" id="current-date"></div>
+            </div>
+            
+            <div class="letter-content">
+                <div class="letter-text" id="letter-text">
+                    <!-- Aquí puedes poner tu carta personalizada -->
+                    <p>Mi amor,</p>
+                    
+                    <p>Cada día que pasa me doy cuenta de lo afortunado que soy de tenerte en mi vida. Eres la luz que ilumina mis días más oscuros y la razón por la que sonrío cada mañana.</p>
+                    
+                    <p>Tu risa es mi melodía favorita, tus ojos son mi refugio y tu amor es mi mayor tesoro. No hay palabras suficientes para expresar todo lo que siento por ti.</p>
+                    
+                    <p>Quiero que sepas que cada momento a tu lado es un regalo, cada conversación es un tesoro y cada abrazo es mi hogar.</p>
+                    
+                    <p>Gracias por ser tú, por amarme como soy y por hacer que cada día sea una nueva aventura llena de amor.</p>
+                    
+                    <p>Te amo más de lo que las palabras pueden expresar y más de lo que el tiempo puede medir.</p>
+                    
+                    <p class="signature">Con todo mi amor,<br> Renzo</p>
+                </div>
+            </div>
+            
+            <div class="letter-actions">
+                <button id="music-btn" class="action-btn">🎵 Música</button>
+                <button id="surprise-btn" class="action-btn">🎁 Sorpresa</button>
+                <button id="memory-btn" class="action-btn">💭 Recuerdos</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pantalla de sorpresa -->
+    <div id="surprise-screen" class="screen">
+        <div class="surprise-content">
+            <h2>¡Una sorpresa especial para ti!</h2>
+            <div class="photo-gallery">
+                <div class="photo-frame">
+                    <img src="1.jpeg" 
+                         onerror="this.src='https://dummyimage.com/400x300/ff69b4/ffffff?text=Nuestro+Amor'" 
+                         alt="Momento especial">
+                    <p>Nuestros momentos juntos</p>
+                </div>
+                <div class="photo-frame">
+                    <img src="2.jpeg" 
+                         onerror="this.src='https://dummyimage.com/400x300/ff1493/ffffff?text=Recuerdos+Hermosos'" 
+                         alt="Recuerdos hermosos">
+                    <p>Cada recuerdo es especial</p>
+                </div>
+                <div class="photo-frame">
+                    <img src="4.jpeg" 
+                         onerror="this.src='https://dummyimage.com/400x300/dc143c/ffffff?text=Nuestro+Futuro'" 
+                         alt="Nuestro futuro">
+                    <p>Cada beso inolvidable.</p>
+                </div>
+            </div>
+            <button id="back-to-letter" class="romantic-btn">Volver a la Carta</button>
+        </div>
+    </div>
+
+    <!-- Reproductor de música -->
+    <div id="music-player" class="music-player">
+        <div class="music-controls">
+            <button id="play-pause">▶️</button>
+            <span>Nuestra canción de amor</span>
+            <button id="close-music">❌</button>
+        </div>
+        <audio id="background-music" loop>
+            <source src="https://www.soundjay.com/misc/sounds/romantic-music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
